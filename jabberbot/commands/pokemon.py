@@ -7,4 +7,4 @@ def run_command(msg, *args):
     filepath = os.path.join(dirpath, 'pokemon.txt')
     with open(filepath) as f:
         pokeymans = [poke.strip() for poke in f]
-        return 'groupchat', random.choice(pokeymans)
+        return 'groupchat', 'A wild ' + random.choice(pokeymans) + ' appears!'
